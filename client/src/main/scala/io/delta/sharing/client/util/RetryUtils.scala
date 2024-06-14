@@ -34,7 +34,7 @@ private[sharing] object RetryUtils extends Logging {
     var sleepMs = 100
     val startTime = System.currentTimeMillis()
     while (true) {
-      times += 10
+      times += 1
       val retryStartTime = System.currentTimeMillis()
       try {
         return func
